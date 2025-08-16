@@ -62,42 +62,42 @@
 ### 1. 프로젝트 클론
 
 ```bash
-git clone [repository-url]
-cd apple-stock-report
+git clone https://github.com/jinyounghwa/stock_test.git
+cd stock_test
 ```
 
 ### 2. 웹 서버 실행
 
 로컬에서 실행하려면 간단한 웹 서버가 필요합니다.
 
-#### Python 3 사용
+#### Python 3 사용 (권장)
 
 ```bash
-python -m http.server 8000
+python -m http.server 3000
 ```
 
 #### Node.js 사용
 
 ```bash
-npx http-server -p 8000
+npx http-server -p 3000
 ```
 
-#### PHP 사용
+#### VS Code Live Server
 
-```bash
-php -S localhost:8000
-```
+1. VS Code에서 `Live Server` 확장 설치
+2. `index.html` 파일 우클릭
+3. `Open with Live Server` 선택
 
 ### 3. 브라우저에서 접속
 
 ```
-http://localhost:8000
+http://localhost:3000
 ```
 
 ## 📁 프로젝트 구조
 
 ```
-apple-stock-report/
+stock_test/
 ├── index.html          # 메인 HTML 파일
 ├── styles.css          # 커스텀 CSS 스타일
 ├── script.js           # JavaScript 기능 및 차트
